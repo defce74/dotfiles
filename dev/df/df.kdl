@@ -1,0 +1,51 @@
+layout {
+	default_tab_template {
+		pane size=1 borderless=true { 
+			plugin location="zellij:tab-bar" 
+		}
+        children
+        pane size=2 borderless=true { 
+			plugin location="zellij:status-bar" 
+		}
+    }
+    tab name="1 dotfiles>" split_direction="Vertical" focus=true {
+        pane split_direction="Vertical"	{
+            pane
+            pane
+        }
+    }
+    tab name="2 nvim>" split_direction="Vertical" {
+        pane split_direction="Vertical"	{
+			pane  { 
+				cwd "./nvim"
+			}
+			pane  { 
+				cwd "./nvim/lua"
+			}
+        }
+    }
+    tab name="3 kitty>" split_direction="Vertical" {
+        pane split_direction="Vertical"	{
+			pane  { 
+				cwd "./kitty"
+			}
+			pane  { 
+				cwd "/usr/share/doc/kitty"
+			}
+        }
+    }
+    tab name="4 zellij>" split_direction="Vertical" {
+        pane split_direction="Vertical"	{
+			pane  { 
+				cwd "./zellij"
+			}
+			pane  { 
+				cwd "./zellij"
+			}
+        }
+    }
+	tab name="5 yazi>" {
+	    pane command="yazi" {
+		}
+	}
+}

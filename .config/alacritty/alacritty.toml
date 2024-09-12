@@ -1,0 +1,12 @@
+# ~/.config/alacritty/alacritty.toml
+#------------------------------------
+live_config_reload = true
+import = [ "~/.config/alacritty/catppuccin-mocha.toml" ]
+
+[window]
+dimensions = { columns = 190, lines = 55 }
+opacity = 0.60
+
+[font]
+normal = { family = "UbuntuMono Nerd Font", style = "Regular" }
+size = 13

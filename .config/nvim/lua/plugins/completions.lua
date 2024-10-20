@@ -17,7 +17,8 @@ return {
 
 		config = function()
 			local cmp = require("cmp")
-			require("luasnip.loaders.from_vscode").lazy_load()
+			require("luasnip.loaders.from_vscode").lazy_load({
+				exclude = { "markdown", "all", }, })
 
 			cmp.setup({
 				snippet = {
@@ -43,6 +44,7 @@ return {
 					{ name = "nvim_lsp" },
 					{ name = "luasnip" },
 					{ name = "pylsp" },
+					{ name = "clangd" },
 				},
 
 				{

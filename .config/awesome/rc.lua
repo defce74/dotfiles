@@ -45,8 +45,9 @@ end
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
--- beautiful.init(gears.filesystem.get_themes_dir() .. "default/theme.lua")
-beautiful.init(gears.filesystem.get_themes_dir() .. "gtk/theme.lua")
+-- beautiful.init(gears.filesystem.get_themes_dir() .. "gtk/theme.lua")
+beautiful.init("/home/dfc/.config/awesome/dedault/theme.lua")
+
 
 -- This is used later as the default terminal and editor to run.
 terminal = "alacritty"

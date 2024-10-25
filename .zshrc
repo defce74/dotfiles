@@ -20,16 +20,15 @@ if [[ -e /usr/share/zsh/manjaro-zsh-prompt ]]; then
   source /usr/share/zsh/manjaro-zsh-prompt
 fi
 
+setopt NO_BEEP # no beeping
+
 # default editor (for yazi)
 export EDITOR=nvim
 
 eval "$(zoxide init zsh)" # init zoxide (for yazi)
 
+# for git bare repo
 alias git-df='/usr/bin/git --git-dir=$HOME/dev/df/df.git --work-tree=$HOME'
-
-# export C_INCLUDE_PATH=/usr/include/pipewire-0.3:/usr/include/spa-0.2
-# export CPLUS_INCLUDE_PATH=/usr/include/pipewire-0.3:/usr/include/spa-0.2
-export CPATH=/usr/include/pipewire-0.3:/usr/include/spa-0.2
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

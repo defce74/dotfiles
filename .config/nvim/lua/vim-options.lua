@@ -23,4 +23,5 @@ vim.opt.cursorline = false
 vim.opt.clipboard = "unnamedplus" -- use system clipboard when yanking and pasting
 
 vim.api.nvim_command('autocmd BufEnter *.tpp :setlocal filetype=cpp') -- tpp filetype
+vim.api.nvim_command('autocmd BufEnter *.lua.test :setlocal filetype=lua') -- awesome config test
 
